@@ -1,0 +1,211 @@
+@import "../../widget/common/common";//引入公用样式文件
+@import "../../widget/loginOrRegister/loginOrRegister";//引入加载登录注册样式文件
+@import "../../widget/header/header";//引入头部样式文件
+@import "../../widget/nav/nav_top";//引入导航条上样式文件
+@import "../../widget/nav/nav_center";//引入导航条下样式文件
+@import "../../widget/footer/footer";//引入尾部样式文件
+@import "../../widget/toolbar/toolbar";//引入返回顶部样式文件
+@import "../../widget/carousel/carousel";//引入轮播图部分样式文件
+//头部样式背景颜色
+
+//内容部分
+.section{
+  @extend %w1200m;
+  height: 410px;
+  margin-top: 60px;
+}
+.section-left{
+  @extend %fl;
+  width: 270px;
+  height: 410px;
+  background-color: #fff;
+  h2{
+    @extend %pr;
+    @extend %c0;
+    @extend %fwn;
+    @extend %f18;
+    margin: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+.more{
+  @extend %pa;
+  @extend %cp;
+  top: 50%;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  background: #333;
+  background: url("more.png?__sprite") no-repeat;
+  &:hover{
+    background: url("more_hover.png?__sprite") no-repeat;
+  }
+}
+.section-left-list{
+  li{
+    @extend %cp;
+    @extend %f14;
+    @extend %pr;
+    @extend %c6;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-top: 10px;
+    transition: all 0.3s;
+    border-left: 3px solid #fff;
+    i{
+      @extend %pa;
+      top: 50%;
+      right: 60px;
+      margin-top: -8px;
+      width: 16px;
+      height: 16px;
+      background: url("arrow.png?__sprite") no-repeat;
+    }
+  }
+  .cur{
+    @extend %c0;
+    border-left: 3px solid #000;
+  }
+}
+.section-right{
+  @extend %pr;
+  @extend %oh;
+  margin-left: 280px;
+  height: 410px;
+}
+.wu-li-ren-box{
+  @extend %pa;
+  top: 0;
+  left: 0;
+}
+.wu-li-ren{
+  @extend %db;
+  @extend %clearfix;
+  @extend %pr;
+  width: 930px;
+  height: 420px;
+  a{
+    @extend %pa;
+    @extend %pr;
+    @extend %oh;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    background-color: #ddd;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    &:hover{
+      .text-img:before{
+        left: 100%;
+        transition: all 0.6s;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -o-transition: all 0.6s;
+      }
+      .text-content{
+        padding-top: 10px;
+        height: 100px;
+      }
+    }
+  }
+}
+.text-img{
+  @extend %pr;
+  width: 300px;
+  height: 160px;
+  img{
+    width: 300px;
+    height: 160px;
+  }
+  &:before{
+    content: '';
+    @extend %pa;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    left: -100%;
+    overflow: hidden;
+    z-index: 6;
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.4) 50%,rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.4)),color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.4) 50%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.4) 50%,rgba(255,255,255,0) 100%);
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+}
+.text-content{
+  @extend %pa;
+  z-index: 9;
+  width: 300px;
+  height: 40px;
+  bottom: 0;
+  color: #142f3a;
+  background-color: #fff;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  p{
+    @extend %f12;
+    padding-left: 20px;
+  }
+  .text-name{
+    @extend %oh;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .text-see,.text-intro{
+    margin-top: 5px;
+  }
+}
+.overflow-hidden{
+  @extend %oh;
+}
+.content-box{
+  @extend %oh;
+  @extend %bgwhite;
+  height: 410px;
+}
+.content{
+  @extend %oh;
+  padding: 20px;
+  height: 350px;
+  a{
+    @extend %db;
+    @extend %f14;
+    @extend %c3;
+    @extend %oh;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #ccc;
+    padding: 0 20px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    &:hover{
+      @extend %fwb;
+      color: #142f3a;
+      text-indent: 20px;
+    }
+  }
+  span{
+    @extend %fr;
+    @extend %c9;
+    @extend %f12;
+  }
+}
+.footer{
+  margin-top: 200px;
+}

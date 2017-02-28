@@ -1,0 +1,113 @@
+@import "../../widget/common/common";//引入公用样式文件
+@import "../../widget/loginOrRegister/loginOrRegister";//引入加载登录注册样式文件
+@import "../../widget/header/header";//引入头部样式文件
+@import "../../widget/nav/nav_top";//引入导航条上样式文件
+@import "../../widget/nav/nav_center";//引入导航条下样式文件
+@import "../../widget/video/video";//引入视频播放样式文件
+@import "../../widget/footer/footer";//引入尾部样式文件
+@import "../../widget/toolbar/toolbar";//引入返回顶部样式文件
+//头部样式
+.header{
+  @extend %pr;
+}
+.nav-top{
+  @extend %pa;
+}
+.website-box{
+  @extend %oh;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+}
+.team-title{
+  @extend %tac;
+  @extend %ma;
+  @extend %c3;
+  font-size: 36px;
+  width: 400px;
+  padding: 30px 0;
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999;
+}
+.website-con{
+  @extend %f14;
+  @extend %c6;
+  @extend %tac;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+.team-box{
+  @extend %oh;
+  @extend %pr;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #666;
+  .team-title{
+    @extend %cfff;
+    width: 220px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+  }
+}
+.team-con{
+  @extend %tac;
+  margin-top: 30px;
+  font-size: 0;
+}
+.team-item{
+  @extend %dib;
+  @extend %f14;
+  @extend %cc;
+  @extend %oh;
+  margin: 0 10px;
+  width: 280px;
+}
+.item-header{
+  @extend %db;
+  @extend %ma;
+  @extend %oh;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #ddd;
+}
+.item-name{
+  @extend %f18;
+  text-align: left;
+  line-height: 1.8;
+  margin-top: 50px;
+  color: #fff;
+}
+.item-con{
+  margin-top: 10px;
+  text-align: left;
+  line-height: 1.8;
+  color: #ddd;
+}
+.join-box{
+  padding: 80px 0 0;
+  background-color: #333;
+}
+.join-icon{
+  @extend %ma;
+  @extend %db;
+  width: 50px;
+  height: 50px;
+  background: url("join-icon.png?__sprite") no-repeat;
+}
+.join-con{
+  @extend %tac;
+  @extend %f14;
+  @extend %c6;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+.line-bar{
+  @extend %db;
+  @extend %w1200m;
+  height: 1px;
+  margin-top: 30px;
+  background: #666;
+}

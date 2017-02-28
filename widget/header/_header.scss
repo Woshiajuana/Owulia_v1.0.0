@@ -1,0 +1,105 @@
+//头部样式
+.header{
+  @extend %oh;
+  height: 100px;
+  width: 100%;
+}
+.header-box{
+  @extend %pr;
+  @extend %w1200m;
+  @extend %oh;
+  height: 100px;
+}
+//logo
+.header-logo{
+  @extend %pa;
+  @extend %oh;
+  @extend %cp;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  text-indent: -100%;
+  transition: all .5s;
+  background: url("logon-icon.png?__sprite") center no-repeat;
+}
+//用户
+.user-box{
+  @extend %pa;
+  right: 0;
+  top: 0;
+  height: 40px;
+  padding-top: 10px;
+  a{
+    @extend %cp;
+    @extend %fl;
+    margin-left: 10px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+//登录
+.register-btn{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.login-btn,.user-icon{
+  @extend %vam;
+  @extend %oh;
+  @extend %tac;
+  @extend %pr;
+  width: 36px;
+  border: 2px solid #669999;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: url("user.png?__sprite") center no-repeat;
+  .login-text{
+    @extend %pa;
+    @extend %tac;
+    @extend %cfff;
+    top: -36px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #142f3a;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+  &:hover{
+    border: 2px solid #142f3a;
+    top: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    .login-text{
+      top: 0;
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+    }
+  }
+}
+.icon{
+  @extend %pa;
+  @extend %tac;
+  @extend %cfff;
+  top: 0px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #142f3a;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}

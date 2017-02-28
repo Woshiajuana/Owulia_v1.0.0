@@ -1,0 +1,85 @@
+.nav-bar{
+  @extend %pa;
+  @extend %clearfix;
+  @extend %c9;
+  @extend %f14;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  height: 30px;
+  line-height: 30px;
+}
+.nav-item{
+  @extend %c0;
+  @extend %fwb;
+  margin: 0 20px;
+  &:hover{
+    border-bottom: 1px solid #000;
+  }
+  &.cur{
+    border-bottom: 1px solid #000;
+    &:hover{
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+.search-box{
+  @extend %dib;
+  @extend %pr;
+  @extend %oh;
+  @extend %vam;
+  height: 30px;
+  width: 30px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  &:hover{
+    width: 300px;
+    .search-input{
+      width: 230px;
+      padding: 0 50px 0 20px;
+    }
+  }
+}
+.search-input{
+  @extend %pa;
+  @extend %f12;
+  @extend %cc;
+  top: 0;
+  right: 0;
+  border: none;
+  width: 0;
+  height: 100%;
+  line-height: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  background-color: #333;
+}
+.clear-btn{
+  @extend %pa;
+  @extend %dn;
+  @extend %cp;
+  top: 1px;
+  right: 30px;
+  width: 28px;
+  height: 28px;
+  background: url("clear-icon.png?__sprite") no-repeat;
+}
+.search-btn{
+  @extend %pa;
+  @extend %cp;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: url("search-icon.png?__sprite") no-repeat;
+}

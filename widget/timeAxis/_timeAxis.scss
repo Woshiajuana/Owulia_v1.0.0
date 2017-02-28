@@ -1,0 +1,152 @@
+.timeAxis{
+  @extend %pr;
+  margin: 100px 0;
+  padding: 100px 0;
+  h1{
+    @extend %pa;
+    left: 240px;
+    top: 20px;
+    font-size: 18px;
+    em{
+      color: red;
+      margin-right: 10px;
+      border-bottom: 1px solid red;
+    }
+  }
+}
+.clock-icon{
+  @extend %pa;
+  top: -37px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  background: url("dt-big-icon.png?__sprite") no-repeat;
+}
+.start-icon{
+  @extend %pa;
+  bottom: -37px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  background: url("start-icon.png?__sprite") no-repeat;
+}
+.line-bg{
+  @extend %pa;
+  top: 50px;
+  bottom: 50px;
+  left: 200px;
+  width: 4px;
+  background-color: #666;
+}
+.year-box{
+  @extend %pr;
+  @extend %oh;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.year-data{
+  @extend %f16;
+  @extend %c0;
+  @extend %fwb;
+  @extend %pr;
+  @extend %cp;
+  @extend %dib;
+  margin-left: 70px;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  i{
+    @extend %pa;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    background: url("triangle-icon1.png?__sprite") no-repeat;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+  }
+  em{
+    @extend %pa;
+    width: 20px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    right: -57px;
+    background: url("year-icon.png?__sprite") no-repeat;
+    background-color: #fdfdfd;
+  }
+}
+.close-year{
+  .year-data{
+    i{
+      background: url("triangle-icon.png?__sprite") no-repeat;
+    }
+  }
+  .month-box{
+    height: 0;
+  }
+}
+.month-box{
+  @extend %oh;
+  @extend %pr;
+  height: 1000px;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+}
+.month-item{
+  @extend %pr;
+  padding: 0 40px 0 240px;
+  margin-top: 50px;
+}
+.month-data{
+  @extend %fwb;
+  @extend %f14;
+  @extend %pa;
+  left: 122px;
+  top: 0;
+}
+.day-box{
+  @extend %pr;
+  @extend %db;
+  margin-top: 20px;
+  h2{
+    @extend %c0;
+    @extend %f14;
+  }
+  .time{
+    @extend %c9;
+    @extend %f12;
+    @extend %fwn;
+    @extend %fr;
+    font-style: italic;
+  }
+}
+.day-icon{
+  @extend %pa;
+  @extend %oh;
+  left: -48px;
+  top: -5px;
+  width: 20px;
+  height: 30px;
+  background:url("mubiao-icon.png?__sprite") no-repeat;
+  background-color: #fdfdfd;
+}
+.content-box{
+  p{
+    text-indent: 2em;
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+  img{
+    max-width: 100%;
+  }
+}

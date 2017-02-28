@@ -1,0 +1,45 @@
+@import "nav";
+//导航条
+.nav-top{
+  @extend %pf;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  height: 30px;
+  top: 60px;
+}
+.nav-box{
+  @extend %pr;
+  @extend %w1200m;
+  height: 100%;
+  .nav-bar{
+    @extend .animated-times6;
+    @extend .fadeIn;
+  }
+}
+.animated-times6{
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

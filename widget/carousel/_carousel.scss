@@ -1,0 +1,196 @@
+//轮播图样式
+.carousel{
+  @extend %pr;
+  @extend %oh;
+  width: 100%;
+  height: 473px;
+}
+.carousel-box{
+  @extend %pr;
+  @extend %w1200m;
+  z-index: 2;
+  height: 473px;
+  ul{
+    @extend %pa;
+    top: 0;
+    height: 460px;
+    left: -1200px;
+  }
+  li{
+    @extend %fl;
+    @extend %oh;
+    @extend %w1200;
+    @extend .animated-times16;
+    @extend .fadeIn;
+    height: 460px;
+  }
+  a{
+    @extend %db;
+    @extend %pr;
+  }
+  img{
+    @extend %w1200;
+    height: 460px;
+  }
+  > span{
+    @extend %pa;
+    width: 50%;
+    height: 460px;
+    top: 0;
+    background: rgba(255,255,255,.5);
+    i{
+      @extend %pa;
+      @extend %oh;
+      @extend %cp;
+      top: 50%;
+      width: 40px;
+      height: 80px;
+      margin-top: -40px;
+      text-indent: -100%;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+
+    }
+  }
+  &:hover{
+    span{
+      i{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+      }
+    }
+  }
+}
+.trigger{
+  @extend %pa;
+  @extend %tac;
+  bottom: 0px;
+  height: 13px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  i{
+    z-index: 2;
+    @extend %pr;
+    @extend %cp;
+    @extend %fl;
+    width: 200px;
+    height: 13px;
+    background-color: #b5b5b5;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    .no-border{
+      border-right: none;
+    }
+    &:hover{
+      background-color: #fff;
+      img{
+        bottom: 13px;
+        z-index: 1;
+        opacity: 1;
+        filter:alpha(opacity=100);
+        -moz-opacity:1;
+        -khtml-opacity: 1;
+        transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+        box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+      }
+    }
+  }
+  img{
+    @extend %pa;
+    bottom: 50px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+  }
+  .cur{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    &:hover{
+      img{
+        opacity: 0;
+        z-index: -1;
+        filter:alpha(opacity=0);
+        -moz-opacity:0;
+        -khtml-opacity: 0;
+        transition: all .3s ease-out;
+        -webkit-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+      }
+    }
+  }
+}
+.trigger-slider{
+  @extend %pa;
+  @extend %cp;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 200px !important;
+  height: 13px;
+  background-color: #333;
+}
+//上一张
+.prev-box{
+  left: -50%;
+}
+.prev-btn{
+  left: 600px;
+  background: url("pre-icon.png?__sprite") no-repeat;
+}
+//下一张
+.next-box{
+  right: -50%;
+}
+.next-btn{
+  left: -40px;
+  background: url("next-icon.png?__sprite") no-repeat;
+}
+.animated-times16{
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn{
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

@@ -1,0 +1,39 @@
+.editor{
+  padding: 20px;
+  h1{
+    @extend %pr;
+    @extend %f18;
+    @extend %c3;
+    @extend %fwn;
+    height: 50px;
+    padding-left: 30px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+.icon-bj{
+  @extend %pa;
+  @extend %oh;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("bj-icon.png?__sprite") no-repeat;
+}
+.title-box{
+  margin-top: 20px;
+}
+.title-prompt{
+  @extend %f12;
+  height: 30px;
+  color: red;
+  line-height: 30px;
+}
+.title-input{
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}

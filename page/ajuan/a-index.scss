@@ -1,0 +1,86 @@
+@import "../../widget/common/common";//引入公用样式文件
+
+*{
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+body{
+  @extend %pr;
+  background: #fff url("body-bg.jpg") center no-repeat fixed;
+  &:after{
+    @extend %pa;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+  }
+}
+.header{
+  @extend %pr;
+  @extend %oh;
+  @extend %w1200m;
+  height: 700px;-webkit-backface-visibility: hidden;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+.logo-box{
+  @extend %pa;
+  top: 0;
+  left: 0;
+  width: 99px;
+  height: 100px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+.logo-icon{
+  @extend %pa;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  width: 99px;
+  height: 36px;
+  top: 50%;
+  left: 0;
+  margin-top: -18px;
+  background: url("logo.png?__sprite") no-repeat;
+}
+
+//搜索框
+.search-box{
+  @extend %pr;
+  @extend %oh;
+  left: 50%;
+  top: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+  width: 60px;
+  height: 60px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  background-color: #fff;
+  .search-input1{
+//    @extend %dn;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.container-one{
+  background-color: #fff;
+  height: 800px;
+
+}

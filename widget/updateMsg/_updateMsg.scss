@@ -1,0 +1,180 @@
+.updateMsg{
+  padding: 40px;
+  h1{
+    @extend %f18;
+    @extend %c0;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+.basic-box,.account-box{
+  padding: 30px;
+  dt{
+    @extend %fwb;
+    @extend %f16;
+    border-left: 3px solid #000;
+    padding-left: 10px;
+  }
+  dd{
+    @extend %pr;
+    margin-top: 10px;
+    span{
+      @extend %f14;
+    }
+  }
+}
+.update-header-img{
+  @extend %pa;
+  @extend %cp;
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  left: 300px;
+  background: url("update-image-icon.png?__sprite") no-repeat;
+}
+.msg-box{
+  @extend %clearfix;
+  height: 40px;
+  line-height: 40px;
+  .select-box,.user-name,.header-title,.input-box{
+    @extend %fl;
+  }
+}
+.header-title{
+  @extend %fwb;
+  @extend %c0;
+  margin-right: 20px;
+}
+.header-img{
+  @extend %oh;
+  width: 192px;
+  height: 192px;
+}
+.select-box{
+  z-index: 1;
+  @extend %cp;
+  @extend %pr;
+  @extend %f14;
+  width: 300px;
+  height: 38px;
+  line-height: 38px;
+  background: url("select-icon.png") no-repeat;
+  background-color: #f3f3f3;
+}
+.select-input{
+  @extend %db;
+  @extend %oh;
+  @extend %pr;
+  width: 248px;
+  padding: 0 40px 0 10px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ddd;
+}
+.options-box{
+  @extend %pa;
+  top: 50%;
+  width: 300px;
+  height: 0;
+  margin-top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  li{
+    @extend %oh;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    &:hover{
+      background-color: #ddd;
+    }
+  }
+  li:last-child{
+    border-bottom:none;
+  }
+}
+.input-box{
+  @extend %f14;
+  label{
+    margin-right: 20px;
+  }
+  input{
+    margin-right: 5px;
+  }
+}
+.account-item{
+  @extend %pr;
+  @extend %f14;
+  @extend %c0;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 80px;
+  border-bottom: 1px solid #ddd;
+  strong{
+    margin: 0 10px;
+  }
+}
+.item-icon,.update-icon{
+  @extend %pa;
+  top: 50%;
+}
+.item-icon{
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+}
+.update-icon{
+  @extend %cp;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("update-icon.png?__sprite") no-repeat;
+}
+.email-icon{
+  background: url("email-icon.png?__sprite") no-repeat;
+}
+.phone-icon{
+  background: url("phone-icon.png?__sprite") no-repeat;
+}
+.password-icon{
+  background: url("pwd-icon.png?__sprite") no-repeat;
+}
+.btn-box{
+  @extend %tac;
+  margin-top: 30px;
+  i{
+    @extend %dib;
+    @extend %cp;
+    @extend %oh;
+    @extend %f14;
+    @extend %c9;
+    margin: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border: 1px solid #999;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    &:hover{
+      @extend %cfff;
+      background-color: #000;
+      border: 1px solid #000;
+    }
+  }
+}

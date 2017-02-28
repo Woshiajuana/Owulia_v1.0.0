@@ -1,0 +1,56 @@
+@import "animate";
+.scene{
+  @extend %pa;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &.active{
+    @extend %db;
+  }
+}
+.scene-1{
+  @extend %db;
+  @extend .animated3;
+  @extend .fadeOut;
+  background-color: #111;
+}
+.scene-2{
+  @extend %f16;
+  @extend %tac;
+  line-height: 440px;
+  span{
+    opacity: 0;
+    @extend %dib;
+  }
+}
+.round-icon{
+  @extend %pa;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background-color: #666;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+}
+
+.text-zai{
+  animation: bounce 1s ease .5s;
+}
+.text-2016{
+  @extend %fwb;
+  @extend %f18;
+  color: #d81e06;
+  animation: bounce 1s ease 1s;
+}
+.text-nian{
+  animation: bounce 1s ease 1.5s;
+}
+

@@ -1,0 +1,302 @@
+@import "video-concent";//引入视频内容的样式文件
+.container-video{
+  @extend %oh;
+  @extend %w1200m;
+  @extend %pr;
+}
+.video-box{
+  @extend %oh;
+  @extend %ma;
+  border: 10px solid #333;
+  height: 440px;
+  padding: 30px;
+  background-color: #fff;
+}
+.video-con{
+  @extend %pr;
+  cursor: default;
+  height: 100%;
+  background-color: #111;
+}
+.video-barrage{
+  @extend %pa;
+  @extend %oh;
+  top: 40px;
+  left: 40px;
+  height: 440px;
+  right: 40px;
+}
+.video-barrage{
+  span{
+    @extend %pa;
+    white-space: nowrap;
+    left: 1120px;
+  }
+}
+.play-box{
+  @extend %pa;
+  @extend %oh;
+  @extend .animated1;
+  top: 10px;
+  left: 10px;
+  height: 500px;
+  right: 10px;
+  background-color: rgba(0,0,0,.3);
+}
+.play-btn{
+  @extend %pa;
+  @extend %cp;
+  content: '';
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  margin-top: -40px;
+  margin-left: -40px;
+  background-color: rgba(255,255,255,.1);
+  border: 2px solid #fff;
+  transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+}
+.play-icon{
+  @extend %pa;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -22px;
+  background: url("play-btn.png?__sprite") no-repeat;
+}
+.video-dado{
+  @extend %pr;
+  @extend %ma;
+  width: 400px;
+  height: 80px;
+}
+.dado-square{
+  @extend %ma;
+  width: 80px;
+  height: 60px;
+  background-color: #333;
+}
+.dado-rec{
+  @extend %ma;
+  height: 20px;
+  width: 400px;
+  background-color: #333;
+}
+.switch-box{
+  @extend %cp;
+  @extend %pa;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -24px;
+  width: 48px;
+  height: 24px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  background-color: #fff;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  span{
+    @extend %fl;
+    @extend %tac;
+    @extend %f12;
+    @extend %fwb;
+    @extend %cfff;
+    width: 50%;
+    line-height: 24px;
+  }
+}
+.switch-slider{
+  @extend %pa;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+}
+.switch-box.on{
+  .switch-slider{
+    left: 2px;
+  }
+  background-color: #d81e06;
+}
+.switch-box.off{
+  .switch-slider{
+    left: 26px;
+  }
+  background-color: #000;
+}
+.input-box{
+  @extend %pa;
+  @extend %oh;
+  @extend %f14;
+  height: 38px;
+  width: 680px;
+  left: 50%;
+  margin-left: -340px;
+  bottom: 100px;
+  border: 1px solid #000;
+  background-color: #555;
+  box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,.3);
+  &.cur{
+    border: 1px solid #669999;
+  }
+}
+.input-text{
+  @extend %pa;
+  @extend %f14;
+  @extend %cc;
+  left: 0;
+  top: 0;
+  border: none;
+  width: 580px;
+  padding: 0 10px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #555;
+}
+.input-btn{
+  @extend %pa;
+  @extend %cp;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 38px;
+  padding-left: 40px;
+  line-height: 38px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  background: url("btn-icon.png?__sprite") no-repeat;
+  background-color: #ddd;
+  &:hover{
+    @extend %cfff;
+    background: url("btn-icon-hover.png?__sprite") no-repeat;
+    background-color: #669999;
+  }
+}
+.animated1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+//视频提示信息
+.prompt-box,.load-box{
+  @extend %pa;
+  @extend %oh;
+  @extend .animated1;
+  @extend .fadeIn;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 100px;
+  margin-top: -50px;
+}
+.prompt-icon,.load-icon{
+  @extend %db;
+  @extend %ma;
+  width: 50px;
+  height: 50px;
+}
+.prompt-icon{
+  background: url("prompt-icon.png?__sprite") no-repeat;
+}
+.load-icon{
+  @extend .rotate360;
+  background: url("load-icon.png?__sprite") no-repeat;
+}
+.prompt-text,.load-text{
+  @extend %f16;
+  @extend %cc;
+  @extend %db;
+  @extend %tac;
+  height: 50px;
+  line-height: 50px;
+}
+.rotate360{
+  animation: rotate360 linear 1s infinite;;
+  -webkit-animation: rotate360 linear 1s infinite;
+}
+@-webkit-keyframes rotate360 {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate360 {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+

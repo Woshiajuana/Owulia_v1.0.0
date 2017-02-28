@@ -1,0 +1,154 @@
+@import "../../widget/common/common";//引入公用样式文件
+@import "../../widget/loginOrRegister/loginOrRegister";//引入加载登录注册样式文件
+@import "../../widget/header/header";//引入头部样式文件
+@import "../../widget/nav/nav_top";//引入导航条上样式文件
+@import "../../widget/nav/nav_center";//引入导航条下样式文件
+@import "../../widget/textarea/textarea";//引入评论框样式文件
+@import "../../widget/footer/footer";//引入尾部样式文件
+@import "../../widget/toolbar/toolbar";//引入返回顶部样式文件
+//头部样式
+.comment-top{
+  @extend %pr;
+  width: 100%;
+  padding: 160px 0;
+}
+.top-prompt{
+  @extend %tac;
+  @extend %fwn;
+  font-size: 32px;
+  b{
+    font-size: 62px;
+    font-family: '宋体';
+  }
+  strong{
+    color: #d81e06;
+  }
+}
+.comment-box{
+  @extend %pr;
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+}
+.comment-title{
+  @extend %ma;
+  @extend %f18;
+  @extend %pr;
+  color: #666;
+  width: 1160px;
+  height: 65px;
+  line-height: 65px;
+  padding-left: 40px;
+  border-bottom: 1px solid #999;
+  .pl-icon{
+    background: url("pl-icon1.png?__sprite") no-repeat;
+  }
+}
+.comment-con{
+  @extend %pr;
+  @extend %oh;
+  @extend %w1200m;
+}
+.comment-item,.reply-item,.reply-input{
+  @extend %pr;
+  @extend %oh;
+  padding: 10px 30px 10px 60px;
+  border-bottom: 1px solid #999;
+  .header-img{
+    top: 10px;
+    left: 0;
+  }
+}
+.item-name-box{
+  @extend %fwn;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+}
+.item-name{
+  @extend %f14;
+  @extend %pr;
+  color: #669999;
+  height: 30px;
+  line-height: 30px;
+}
+.item-con{
+  @extend %f14;
+  line-height: 1.8;
+}
+.operation-box{
+  @extend %oh;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+.num-reply{
+  @extend %f12;
+  @extend %c9;
+  @extend %cp;
+  @extend %dib;
+  @extend %pr;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 25px;
+  &.cur{
+    @extend %c6;
+    .num-reply-icon{
+      background: url("zk-icon.png?__sprite") no-repeat;
+    }
+  }
+}
+.num-reply-icon{
+  @extend %pa;
+  @extend %vam;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background: url("sq-icon.png?__sprite") no-repeat;
+  margin-right: 5px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+}
+.reply-btn{
+  @extend %cp;
+  @extend %dib;
+  @extend %vam;
+  width: 20px;
+  height: 20px;
+  background: url("reply-icon.png?__sprite") no-repeat;
+}
+.reply-item,.reply-input{
+  border-top: 1px dashed #999;
+  border-bottom: none;
+  .operation-box{
+    padding: 0;
+  }
+}
+.reply-time{
+  @extend %c9;
+  @extend %f12;
+  margin-left: 20px;
+}
+.comment-prompt{
+  @extend %w1200m;
+  @extend %cp;
+  @extend %tac;
+  @extend %f18;
+  padding: 50px 0;
+  span{
+    @extend %dib;
+    @extend %vam;
+  }
+}
+.comment-prompt-icon{
+  @extend %dib;
+  @extend %vam;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background: url("more-icon.png?__sprite") no-repeat;
+}

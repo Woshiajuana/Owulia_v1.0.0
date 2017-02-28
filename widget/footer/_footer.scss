@@ -1,0 +1,71 @@
+//尾部
+.footer{
+  padding: 80px 0 50px;
+  background-color: #333;
+}
+.footer-icon,.footer-link,.footer-copy{
+  @extend %pr;
+  @extend %w1200m;
+  @extend %tac;
+}
+.footer-icon{
+  @extend %oh;
+  height: 32px;
+}
+.icon-item{
+  @extend %dib;
+  @extend %oh;
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  &:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+}
+.item-xlwb{
+  background: url("blog-icon.png?__sprite") no-repeat;
+}
+.item-txwb{
+  background: url("ten-icon.png?__sprite") no-repeat;
+}
+.item-wx{
+  background: url("chat-icon.png?__sprite") no-repeat;
+}
+.item-qq{
+  background: url("qq-icon.png?__sprite") no-repeat;
+}
+.item-kj{
+  background: url("kj-icon.png?__sprite") no-repeat;
+}
+.item-gh{
+  background: url("gitHub-icon.png?__sprite") no-repeat;
+}
+.footer-link{
+  @extend %oh;
+  @extend %f14;
+  padding: 25px 0 15px;
+  a{
+    margin: 0 10px;
+    color: #ddd;
+    &:hover{
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+.footer-copy{
+  @extend %c9;
+  @extend %f12;
+  a{
+    @extend %c9;
+  }
+}
