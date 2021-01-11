@@ -19,9 +19,9 @@ fis.match('*.js', {
     optimizer: fis.plugin('uglify-js')//压缩js；fis-optimizer-uglify-js 插件进行压缩，已内置
 });
 
-fis.match('*.png', {
-    optimizer: fis.plugin('png-compressor')//压缩png；fis-optimizer-png-compressor 插件进行压缩，已内置
-});
+// fis.match('*.png', {
+//     optimizer: fis.plugin('png-compressor')//压缩png；fis-optimizer-png-compressor 插件进行压缩，已内置
+// });
 
 ////开启md5戳
 //fis.match('*.{js,css,png,gif}',{
@@ -29,14 +29,14 @@ fis.match('*.png', {
 //});
 
 ////所有的 html
-//fis.match('/page/*/*.html', {
+// fis.match('/page/*/*.html', {
 //    //发布到/static/js/xxx目录下
 //    isHtmlLink : true,
 //    release : '/$0'
 //    //访问url是/mm/static/js/xxx
 //    //url : '/static/$0'
 //
-//});
+// });
 
 // 所有的 js
 fis.match('/page/*/*.js', {

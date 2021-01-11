@@ -2,7 +2,7 @@
  * Created by 2144 on 2016/9/22.
  * 轮播部分的js
  */
-__inline('../../static/lib/ajuanCarousel-1.0.js');//轮播工具js类
+__inline('../../static/lib/ajuanCarousel.js');//轮播工具js类
 ;(function () {
 
     var doc = document,
